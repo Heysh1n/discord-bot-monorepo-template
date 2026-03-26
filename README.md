@@ -309,3 +309,8 @@ Usage: `import { logInfo } from "@share/core/functions/logSave.function"`
 
     ![CUSTOM](https://img.shields.io/badge/CUSTOM-F4C?style=for-the-badge&logo=CUSTOM&logoColor=white)  
 
+Made with ❤️ by Heysh1n
+
+
+
+
