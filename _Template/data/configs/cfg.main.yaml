@@ -1,0 +1,137 @@
+#════════════════════════════════════════════════════════════#
+#       MAIN CONFIGURATION — Server, Timings, Database       #
+# ────────────────────────────────────────────────────────── #
+#       AUTO-GENERATED FROM DEFAULTS                        #
+#       Edit values below as needed                         #
+#════════════════════════════════════════════════════════════#
+
+server:
+  guild:
+    id: "${GUILD_ID:INSERT_GUILD_ID_HERE}"
+    name: "${GUILD_NAME:SERVER NAME}"
+    avatar: "${GUILD_AVATAR:}"
+    banner: ""
+  roles:
+    owner: "1478026438727958569"
+    management:
+      manager: "INSERT_ROLE_ID"
+      representative: "INSERT_ROLE_ID"
+    targetStaff: "INSERT_ROLE_ID"
+    otherRoles: []
+  channels:
+    voice:
+      urlVoice: "INSERT_CHANNEL_ID"
+      main: "INSERT_CHANNEL_ID"
+      createTemp: "INSERT_CHANNEL_ID"
+      staffvoice: "INSERT_CHANNEL_ID"
+      lobbys: []
+      staff: []
+      afk: "INSERT_CHANNEL_ID"
+    text:
+      rule: "INSERT_CHANNEL_ID"
+      info: "INSERT_CHANNEL_ID"
+      news: "INSERT_CHANNEL_ID"
+      chat: "INSERT_CHANNEL_ID"
+      cmd_chat: "INSERT_CHANNEL_ID"
+      nsfw_chat: "INSERT_CHANNEL_ID"
+      danger_zone: "INSERT_CHANNEL_ID"
+      staff: []
+    logs:
+      trashes:
+        discord: "INSERT_CHANNEL_ID"
+        database: "INSERT_CHANNEL_ID"
+        audit: "INSERT_CHANNEL_ID"
+        other: "INSERT_CHANNEL_ID"
+      general:
+        bots: "INSERT_CHANNEL_ID"
+        users: "INSERT_CHANNEL_ID"
+        server: "INSERT_CHANNEL_ID"
+        other: "INSERT_CHANNEL_ID"
+      staff: []
+  voiceSettings:
+    VoiceOn: true
+    connectionVoiceChannel: "1478023790406402069"
+  botProfileSettings:
+    typeStatus: "online"
+    textActivity: "🌠 | Setup Mode"
+    typeActivity: 2
+    statusUrl: "https://life-xp.ru"
+timings:
+  cooldowns:
+    global: 300000
+    maxAge: 1800000
+  autoPunishment:
+    timeout: 600000
+    penalty: 1
+    max: 3
+    checkInterval: 60000
+  autoDelete:
+    global: 60000
+    command: 60000
+    error: 60000
+    success: 60000
+    warning: 60000
+    failure: 60000
+    system: 60000
+  collectors:
+    default: 60000
+    reaction: 60000
+    message: 60000
+    button: 60000
+    selectMenu: 60000
+    modal: 60000
+  musicConfig:
+    musicDir: "./config/music"
+    volume: 1
+    loop: false
+    shuffle: false
+    supportedFormats:
+      - ".mp3"
+      - ".ogg"
+      - ".wav"
+      - ".webm"
+      - ".flac"
+      - ".m4a"
+    connectionTimeout: 30000
+    selfDeaf: false
+    selfMute: false
+    maxErrors: 3
+    retryDelay: 1000
+    autoReconnect: true
+    reconnectAttempts: 5
+    announceTrack: false
+    fadeEnabled: true
+    fadeDuration: 500
+    schedule:
+      enabled: true
+      startTime: "06:00"
+      endTime: "20:00"
+  system:
+    autoSavetoDB: 60000
+    logDelaySaves: 10
+    cleanupMessages: 10
+database:
+  local:
+    enabled: true
+    fileName: "database.local.json"
+    directory: "../data/configs/db"
+    saveDebounceMs: 1000
+    backupOnCorrupted: true
+    validateOnLoad: true
+    repairOnError: true
+  mongo:
+    enabled: false
+    database: "BotName"
+    collection: "staff"
+    autoSync:
+      enabled: true
+      intervalMs: 300000
+    connectionTimeout: 10000
+    serverSelectionTimeout: 5000
+  logging:
+    logLoads: false
+    logSaves: false
+    logRepairs: true
+    logSync: false
+hiddenRoles:
+  - "INSERT_ROLE_ID"

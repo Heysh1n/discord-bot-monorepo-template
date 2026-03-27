@@ -1,0 +1,72 @@
+#════════════════════════════════════════════════════════════#
+#     PERMISSIONS CONFIGURATION — Access Levels & Groups     #
+# ────────────────────────────────────────────────────────── #
+#     AUTO-GENERATED FROM DEFAULTS                          #
+#     Edit values below as needed                           #
+#════════════════════════════════════════════════════════════#
+
+hierarchyOrder:
+  - "owner"
+  - "management"
+  - "representative"
+  - "staff"
+  - "workers"
+seniorLevels:
+  - "owner"
+  - "management"
+accessGroups:
+  owner:
+    channels:
+      - "*"
+    roles:
+      - "*"
+    users:
+      - "*"
+    categories:
+      - "*"
+    strict: false
+    accessLevel: "owner"
+  management:
+    channels:
+      - "*"
+    roles:
+      - "*"
+    users:
+      - "*"
+    categories:
+      - "*"
+    strict: false
+    accessLevel: "management"
+  representative:
+    channels:
+      - "*"
+    roles:
+      - "*"
+    users:
+      - "*"
+    categories:
+      - "*"
+    strict: false
+    accessLevel: "representative"
+  staff:
+    channels:
+      - "*"
+    roles:
+      - "*"
+    users:
+      - "*"
+    categories:
+      - "*"
+    strict: false
+    accessLevel: "staff"
+  workers:
+    channels:
+      - "*"
+    roles:
+      - "*"
+    users:
+      - "*"
+    categories:
+      - "*"
+    strict: false
+    accessLevel: "workers"

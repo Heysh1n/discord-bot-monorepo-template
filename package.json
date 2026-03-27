@@ -1,0 +1,35 @@
+{
+  "name": "syndicate-bots",
+  "version": "1.0",
+  "description": "Absolutly new configurations for bot and new configs in packeage and tsconfig `jsons` by Heysh1n",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx run-bots.ts dev",
+    "watch": "tsx run-bots.ts watch",
+    "build": "tsx run-bots.ts build",
+    "start": "tsx run-bots.ts start",
+    "prod": "tsx run-bots.ts prod",
+    "lint": "tsx run-bots.ts lint",
+    "fix": "tsx run-bots.ts fix",
+    "start:pm2": "pm2 start ecosystem.config.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1",
+    "kleur": "^4.1.5",
+    "moment-timezone": "^0.6.0",
+    "node-schedule": "^2.1.1",
+    "pg": "^8.20.0",
+    "tsconfig-paths": "^4.2.0",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/moment-timezone": "^0.5.13",
+    "@types/node": "^25.3.3",
+    "@types/node-schedule": "^2.1.8",
+    "@types/pg": "^8.18.0",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,99 @@
+#════════════════════════════════════════════════════════════#
+#      LOGGING CONFIGURATION — Console, Files, Archive       #
+# ────────────────────────────────────────────────────────── #
+#      AUTO-GENERATED FROM DEFAULTS                         #
+#      Edit values below as needed                          #
+#════════════════════════════════════════════════════════════#
+
+logs:
+  botName: "${BOT_NAME:RASBERRY}"
+  logsDir: ""
+  archiveDir: ""
+  timezone: "Europe/Moscow"
+  dateFormat: "YYYY-MM-DD HH:mm:ss"
+  fileDateFormat: "YYYY-MM-DD"
+  maxFileSizeMB: 10
+  keepArchiveDays: 30
+  maxBufferSize: 100
+  flushIntervalMs: 5000
+  compressionLevel: 6
+  interceptConsole: false
+  includeStackTrace: true
+  jsonMaxDepth: 3
+  minLevel: "DEBUG"
+  enabledLevels:
+    info: true
+    error: true
+    warn: true
+  mode: "production"
+  categories:
+    STARTUP: true
+    SHUTDOWN: true
+    COMMANDS: true
+    EVENTS: true
+    MUSIC: true
+    VOICE_TRACKER: true
+    MONITOR: true
+    DATABASE: true
+    MONGO_SYNC: true
+    STAFF_DB: true
+    COMMAND_LOAD: true
+    EVENT_LOAD: true
+    DB_OPERATIONS: true
+    WRAPPER_LOGS: true
+errorHandler:
+  enabled: true
+  errorChannelId: "1467896034721136702"
+  crashLogsDir: ""
+  maxStackLength: 1500
+  sendDelayMs: 500
+  maxQueueSize: 50
+  sendWarnings: false
+  ignorePatterns:
+    - "ECONNRESET"
+    - "ETIMEDOUT"
+    - "ENOTFOUND"
+    - "getaddrinfo"
+    - "EAI_AGAIN"
+    - "Unknown Message"
+    - "Unknown interaction"
+    - "Unknown Channel"
+    - "Missing Access"
+    - "Missing Permissions"
+    - "Cannot send messages to this user"
+    - "DiscordAPIError[50013]"
+    - "DiscordAPIError[10008]"
+    - "DiscordAPIError[10062]"
+    - "RateLimited"
+presets:
+  production:
+    STARTUP: true
+    SHUTDOWN: true
+    COMMANDS: true
+    EVENTS: true
+    DATABASE: true
+    MUSIC: true
+    VOICE_TRACKER: true
+  development:
+    STARTUP: true
+    SHUTDOWN: true
+    COMMANDS: true
+    EVENTS: true
+    DATABASE: true
+    COMMAND_LOAD: true
+    EVENT_LOAD: true
+  debug:
+    STARTUP: true
+    SHUTDOWN: true
+    COMMANDS: true
+    EVENTS: true
+    MUSIC: true
+    VOICE_TRACKER: true
+    MONITOR: true
+    DATABASE: true
+    MONGO_SYNC: true
+    STAFF_DB: true
+    COMMAND_LOAD: true
+    EVENT_LOAD: true
+    DB_OPERATIONS: true
+    WRAPPER_LOGS: true
